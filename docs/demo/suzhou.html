@@ -1,0 +1,153 @@
+<!doctype html><html lang="zh"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>心动旅行卡 · Vibe2Trip</title>
+<style>
+:root{--bg:#0f1115;--card:#171a21;--ink:#eef1f6;--sub:#9aa3b2;--line:#262b36;--acc:#ff7a59;--acc2:#6ee7c7}
+*{box-sizing:border-box}body{margin:0;background:linear-gradient(180deg,#0f1115,#12151c);color:var(--ink);font:15px/1.7 -apple-system,"PingFang SC","Microsoft YaHei",Segoe UI,sans-serif}
+.wrap{max-width:860px;margin:0 auto;padding:32px 20px 64px}
+.head{display:flex;align-items:center;gap:12px;margin-bottom:6px}.logo{font-size:26px}.title{font-size:24px;font-weight:800;letter-spacing:.5px}
+.sub{color:var(--sub);margin:0 0 22px}.banner{background:#2a2416;border:1px solid #4a3d1c;color:#ffd479;padding:10px 14px;border-radius:10px;margin-bottom:18px;font-size:13px}
+section{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px;margin-bottom:18px}
+h2{font-size:16px;margin:0 0 14px;display:flex;align-items:center;gap:8px}h2 .n{color:var(--acc);font-weight:800}
+.heart{background:linear-gradient(90deg,rgba(255,122,89,.14),transparent);border-left:3px solid var(--acc);padding:10px 14px;border-radius:8px;margin-bottom:14px;color:#ffd9cd}
+.chips{display:flex;flex-wrap:wrap;gap:8px}.chip{background:#1e232c;border:1px solid var(--line);border-radius:20px;padding:5px 12px;font-size:13px;color:var(--sub)}.chip b{color:var(--ink);margin-right:6px;font-weight:600}
+.dests{display:flex;flex-wrap:wrap;gap:10px}.dest{flex:1 1 220px;background:#1b2029;border:1px solid var(--line);border-radius:12px;padding:12px 14px}.dest.pref{border-color:var(--acc);box-shadow:0 0 0 1px rgba(255,122,89,.3) inset}.dname{font-weight:700}.star{color:var(--acc);font-size:12px}.dmatch{color:var(--sub);font-size:13px;margin-top:4px}
+.conline{color:var(--sub);font-size:14px}.assume{color:#ffd479;font-size:12px;margin-top:6px}
+.day{margin-bottom:16px}.dayLabel{font-weight:700;color:var(--acc2);margin-bottom:8px}
+.poi{display:flex;gap:12px;padding:10px 0;border-top:1px solid var(--line)}.poi img{width:74px;height:74px;object-fit:cover;border-radius:10px;flex:0 0 auto}
+.poiBody{flex:1}.poiTop{display:flex;align-items:center;gap:8px}.slot{background:#232a35;color:var(--sub);border-radius:6px;padding:1px 8px;font-size:12px}.poiName{color:var(--ink);font-weight:600;text-decoration:none}.poiName:hover{color:var(--acc)}
+.poiTags{margin:6px 0}.tag{display:inline-block;background:rgba(110,231,199,.12);color:var(--acc2);border-radius:6px;padding:1px 8px;font-size:12px;margin-right:6px}.tag.ghost{background:#232a35;color:var(--sub)}
+.why{color:var(--sub);font-size:13px}
+table{width:100%;border-collapse:collapse;font-size:14px}th,td{text-align:left;padding:8px 6px;border-bottom:1px solid var(--line)}th{color:var(--sub);font-weight:500;font-size:12px}.price{color:var(--acc);font-weight:700}td a{color:var(--acc2);text-decoration:none}
+.hotels{display:flex;flex-direction:column;gap:12px}.hotel{display:flex;gap:12px;background:#1b2029;border:1px solid var(--line);border-radius:12px;padding:10px}.hotel img{width:96px;height:96px;object-fit:cover;border-radius:10px;flex:0 0 auto}
+.hBody{flex:1}.hName{color:var(--ink);font-weight:700;text-decoration:none}.hName:hover{color:var(--acc)}.hMeta{color:var(--sub);font-size:12px;margin:4px 0;display:flex;gap:10px;flex-wrap:wrap}.hPrice{color:var(--acc);font-weight:800;font-size:18px;margin-top:4px}.hPrice small{color:var(--sub);font-weight:400;font-size:12px}
+.budget{margin-top:14px;background:linear-gradient(90deg,rgba(255,122,89,.16),transparent);border:1px solid rgba(255,122,89,.35);border-radius:12px;padding:14px;font-size:24px;font-weight:800;color:#ffb59e}.budget small{display:block;font-size:12px;color:var(--sub);font-weight:400;margin-top:4px}.budget.locked{color:#ffd479;border-color:#4a3d1c;background:linear-gradient(90deg,rgba(255,212,121,.12),transparent);font-size:16px}
+.empty{color:var(--sub);font-size:13px;padding:8px 0}
+.foot{color:var(--sub);font-size:12px;text-align:center;margin-top:20px}
+</style></head><body><div class="wrap">
+<div class="head"><span class="logo">🎨</span><span class="title">心动旅行卡 · Vibe2Trip</span></div>
+<p class="sub">「这张图的感觉，帮我安排」—— 旅行审美解构师</p>
+
+
+
+<section><h2><span class="n">①</span> 心动解读 · 旅行审美画像</h2>
+<div class="heart">💗 在喧嚣之外，与一人共坐小舟，看光穿过柳枝落在青石板与老屋上，时间仿佛被水纹拉长</div>
+<div class="chips"><span class="chip"><b>地貌场景</b>江南水乡河道，白墙黛瓦民居沿河而建，远处有石拱桥与低山轮廓</span><span class="chip"><b>色调光线</b>晨昏柔光金调，水面高光反射强烈，白墙微暖灰，柳叶嫩绿泛黄，整体低饱和暖色系</span><span class="chip"><b>氛围情绪</b>静谧、温润、怀旧、诗意栖居</span><span class="chip"><b>活动暗示</b>乘手摇木船漫游、沿河岸散步观景</span><span class="chip"><b>节奏快慢</b>极慢，沉浸式</span><span class="chip"><b>季节感</b>秋初或春末（柳叶未全枯亦未盛，水面浮萍尚存，光线斜长）</span><span class="chip"><b>人文/自然</b>人文8:自然2</span></div>
+<p class="conline" style="margin-top:12px">识别地点：图中未体现</p>
+<p class="conline" style="margin-top:6px">灵感来源：用户上传的灵感图（demo_inspiration.png）</p></section>
+
+<section><h2><span class="n">②</span> 命定目的地</h2><div class="dests"><div class="dest pref"><div class="dname">苏州 <span class="star">⭐首选</span></div><div class="dmatch">白墙黛瓦水巷格局、石拱桥、手摇船体验、秋日晨光氛围高度吻合；同里/周庄/甪直等古镇可精准复现此景</div></div><div class="dest "><div class="dname">嘉兴</div><div class="dmatch">西塘古镇典型水巷+马头墙+晨雾金光场景；11月游客较少，节奏更慢，符合情侣静谧需求</div></div><div class="dest "><div class="dname">湖州</div><div class="dmatch">南浔古镇具备类似建筑风格与水道结构，且靠近莫干山，可组合轻徒步，但晨光水巷经典度略逊于苏嘉</div></div></div></section>
+
+<section><h2><span class="n">③</span> 出行约束</h2>
+<div class="conline">出发地 上海 ｜ 日期 2026-11-08 ~ 2026-11-10 ｜ 3天 ｜ 同行 2人情侣 ｜ 预算 中等</div>
+</section>
+
+<section><h2><span class="n">④</span> 按天行程</h2><div class="day"><div class="dayLabel">第 1 天</div>
+      <div class="poi">
+        <img src="https://img.alicdn.com/tfscom/TB1F5Q8DO_1gK0jSZFqSuwpaXXa" loading="lazy" onerror="this.style.display='none'">
+        <div class="poiBody">
+          <div class="poiTop"><span class="slot">上午</span><a class="poiName" href="https://router.feizhu.com/multi/webview?url=https%3A%2F%2Frouter.feizhu.com%2Fws%2F0btE1o" target="_blank" rel="noopener">同里古镇</a></div>
+          <div class="poiTags"><span class="tag">契合 · 江南水乡河道，白墙黛瓦民居沿河而建，远处有石拱桥与低山轮廓</span><span class="tag ghost">约半天</span></div>
+          <div class="why">作为核心古镇整体入口，上午柔光最宜初识水巷肌理与白墙黛瓦天际线，奠定静谧温润基调</div>
+        </div>
+      </div>
+      <div class="poi">
+        <img src="https://img.alicdn.com/tfscom/TB1QEWIqhSYBuNjSsphSuvGvVXa" loading="lazy" onerror="this.style.display='none'">
+        <div class="poiBody">
+          <div class="poiTop"><span class="slot">下午</span><a class="poiName" href="https://router.feizhu.com/multi/webview?url=https%3A%2F%2Frouter.feizhu.com%2Fws%2F2ZtxWK" target="_blank" rel="noopener">苏州同里古镇旅游区穿心弄</a></div>
+          <div class="poiTags"><span class="tag">契合 · 江南水乡河道，白墙黛瓦民居沿河而建，远处有石拱桥与低山轮廓</span><span class="tag ghost">约1h</span></div>
+          <div class="why">紧邻古镇主水系，窄巷高墙强化空间纵深感与怀旧触感，午后斜光在灰白斑驳墙面上形成诗意明暗节奏</div>
+        </div>
+      </div>
+      <div class="poi">
+        <img src="https://img.alicdn.com/imgextra/i4/6000000001544/O1CN01TXtNhm1NHC1zeAury_!!6000000001544-0-fliggyimage.jpg" loading="lazy" onerror="this.style.display='none'">
+        <div class="poiBody">
+          <div class="poiTop"><span class="slot">晚上</span><a class="poiName" href="https://router.feizhu.com/multi/webview?url=https%3A%2F%2Frouter.feizhu.com%2Fws%2F1Y27gm" target="_blank" rel="noopener">同里古镇-泰来桥</a></div>
+          <div class="poiTags"><span class="tag">契合 · 晨昏柔光金调，水面高光反射强烈，白墙微暖灰，柳叶嫩绿泛黄，整体低饱和暖色系</span><span class="tag ghost">约30m</span></div>
+          <div class="why">石拱桥在暮色金调中倒影完整，水面浮萍与微光交映，契合‘光穿过柳枝落在青石板’的沉浸式收束时刻</div>
+        </div>
+      </div></div><div class="day"><div class="dayLabel">第 2 天</div>
+      <div class="poi">
+        <img src="https://img.alicdn.com/imgextra/i1/O1CN01Ynu1mb1ESLDciRpJP_!!0-travel.jpg" loading="lazy" onerror="this.style.display='none'">
+        <div class="poiBody">
+          <div class="poiTop"><span class="slot">上午</span><a class="poiName" href="https://router.feizhu.com/multi/webview?url=https%3A%2F%2Frouter.feizhu.com%2Fws%2F1G4dpB" target="_blank" rel="noopener">耕乐堂</a></div>
+          <div class="poiTags"><span class="tag">契合 · 人文8:自然2</span><span class="tag ghost">约2h</span></div>
+          <div class="why">明代宅第前宅后园结构完美呼应‘静谧、温润、诗意栖居’，园中斋阁榭布局适宜极慢 pace 漫游与坐观</div>
+        </div>
+      </div>
+      <div class="poi">
+        <img src="https://img.alicdn.com/tfscom/TB12vMkPXXXXXc6XVXXSutbFXXX" loading="lazy" onerror="this.style.display='none'">
+        <div class="poiBody">
+          <div class="poiTop"><span class="slot">下午</span><a class="poiName" href="https://router.feizhu.com/multi/webview?url=https%3A%2F%2Frouter.feizhu.com%2Fws%2F4W3Wzv" target="_blank" rel="noopener">苏州同里古镇旅游区-务本堂</a></div>
+          <div class="poiTags"><span class="tag">契合 · 人文8:自然2</span><span class="tag ghost">约1.5h</span></div>
+          <div class="why">五进深宅与船厅雕刻承载厚重人文，午后光线柔和利于细品木构与空间叙事，与耕乐堂地理相邻，避免动线折返</div>
+        </div>
+      </div>
+      <div class="poi">
+        <img src="https://img.alicdn.com/imgextra/i1/O1CN01SZX7XA1qOdP1DJXhv_!!0-travel.jpg" loading="lazy" onerror="this.style.display='none'">
+        <div class="poiBody">
+          <div class="poiTop"><span class="slot">晚上</span><a class="poiName" href="https://router.feizhu.com/multi/webview?url=https%3A%2F%2Frouter.feizhu.com%2Fws%2F1UtGpo" target="_blank" rel="noopener">松石悟园</a></div>
+          <div class="poiTags"><span class="tag">契合 · 晨昏柔光金调，水面高光反射强烈，白墙微暖灰，柳叶嫩绿泛黄，整体低饱和暖色系</span><span class="tag ghost">约1h</span></div>
+          <div class="why">石皮弄中展馆自带古意，晚间暖光映照太湖石与老墙，静谧氛围与‘时间被水纹拉长’的心境高度共振</div>
+        </div>
+      </div></div><div class="day"><div class="dayLabel">第 3 天</div>
+      <div class="poi">
+        <img src="https://img.alicdn.com/imgextra/i2/O1CN01g1BhEW1xQBxUlzesy_!!0-alitrip.jpg" loading="lazy" onerror="this.style.display='none'">
+        <div class="poiBody">
+          <div class="poiTop"><span class="slot">上午</span><a class="poiName" href="https://router.feizhu.com/multi/webview?url=https%3A%2F%2Frouter.feizhu.com%2Fws%2F1BwraH" target="_blank" rel="noopener">苏州同里古镇旅游区-王绍鏊纪念馆</a></div>
+          <div class="poiTags"><span class="tag">契合 · 人文8:自然2</span><span class="tag ghost">约1.5h</span></div>
+          <div class="why">留耕堂原址承载民主促进会历史文脉，东中西三陪弄结构延续巷弄体验，上午光线利于阅读展陈与建筑细节</div>
+        </div>
+      </div>
+      <div class="poi">
+        <img src="https://gw.alicdn.com/imgextra/i1/O1CN01iQXJEG1gJ0oB4FQaS_!!6000000004120-0-tps-2668-2000.jpg" loading="lazy" onerror="this.style.display='none'">
+        <div class="poiBody">
+          <div class="poiTop"><span class="slot">下午</span><a class="poiName" href="https://router.feizhu.com/multi/webview?url=https%3A%2F%2Frouter.feizhu.com%2Fws%2F3VmZMT" target="_blank" rel="noopener">苏州同里古镇旅游区-石牌楼</a></div>
+          <div class="poiTags"><span class="tag">契合 · 江南水乡河道，白墙黛瓦民居沿河而建，远处有石拱桥与低山轮廓</span><span class="tag ghost">约30m</span></div>
+          <div class="why">典型明清街坊标识物，立于水岸转角处，下午侧光强化石雕肌理与白墙对比，短暂停留即完成人文地景锚点</div>
+        </div>
+      </div>
+      <div class="poi">
+        <img src="https://gw.alicdn.com/imgextra/i4/O1CN01noZLOa214S9JqHk1M_!!6000000006931-0-tps-1500-996.jpg" loading="lazy" onerror="this.style.display='none'">
+        <div class="poiBody">
+          <div class="poiTop"><span class="slot">晚上</span><a class="poiName" href="https://router.feizhu.com/multi/webview?url=https%3A%2F%2Frouter.feizhu.com%2Fws%2F137UoM" target="_blank" rel="noopener">苏州同里古镇旅游区-同里三分地</a></div>
+          <div class="poiTags"><span class="tag">契合 · 静谧、温润、怀旧、诗意栖居</span><span class="tag ghost">约1h</span></div>
+          <div class="why">名称与意境直指‘栖居’内核，临水开放空间适合二人并坐观星听水，收束于‘喧嚣之外’的终极情绪闭环</div>
+        </div>
+      </div></div></section>
+
+<section><h2><span class="n">⑤</span> 可预订清单</h2>
+<h2 style="font-size:14px;color:var(--sub)">交通</h2>
+<table><thead><tr><th>航段</th><th>车次/航班</th><th>时间</th><th>价格</th><th></th></tr></thead><tbody><tr><td>去程</td><td>1462</td><td>12:15 → 13:29</td><td class="price">¥12</td><td><a href="https://router.feizhu.com/multi/webview?url=https%3A%2F%2Frouter.feizhu.com%2Fws%2F41oY2i" target="_blank" rel="noopener">预订</a></td></tr><tr><td>返程</td><td>1461</td><td>05:41 → 06:45</td><td class="price">¥12</td><td><a href="https://router.feizhu.com/multi/webview?url=https%3A%2F%2Frouter.feizhu.com%2Fws%2F44P1fU" target="_blank" rel="noopener">预订</a></td></tr></tbody></table>
+<h2 style="font-size:14px;color:var(--sub);margin-top:18px">住宿</h2>
+<div class="hotels">
+    <div class="hotel">
+      <img src="https://img.alicdn.com/imgextra/i2/6000000002372/O1CN01mQHwqvyCFVJ2b89F_!!6000000002372-0-hotel.jpg" loading="lazy" onerror="this.style.display='none'">
+      <div class="hBody">
+        <a class="hName" href="https://router.feizhu.com/multi/webview?url=https%3A%2F%2Frouter.feizhu.com%2Fws%2F2FSAEu" target="_blank" rel="noopener">吴江东恒盛国际大酒店</a>
+        <div class="hMeta"><span>五星级</span><span>近吴江人民广场(地铁站)</span></div>
+        <div class="tag">契合 · 舒适通勤</div>
+        <div class="hPrice">¥318<small>/晚</small></div>
+      </div>
+    </div>
+    <div class="hotel">
+      <img src="https://img.alicdn.com/imgextra/i4/O1CN01nnnPidfV4kF24uLA_!!4611686018427387817-0-fliggy_content_upload_image.jpg" loading="lazy" onerror="this.style.display='none'">
+      <div class="hBody">
+        <a class="hName" href="https://router.feizhu.com/multi/webview?url=https%3A%2F%2Frouter.feizhu.com%2Fws%2F3VG4vi" target="_blank" rel="noopener">苏州同里水尚居日式临河景观客栈</a>
+        <div class="hMeta"><span>经济型</span><span>近苏州同里古镇旅游区</span></div>
+        <div class="tag">契合 · 高性价比</div>
+        <div class="hPrice">¥132<small>/晚</small></div>
+      </div>
+    </div>
+    <div class="hotel">
+      <img src="https://img.alicdn.com/imgextra/i1/6000000007409/O1CN01c5ecEq24bN52IKqmI_!!6000000007409-0-hotel.jpg" loading="lazy" onerror="this.style.display='none'">
+      <div class="hBody">
+        <a class="hName" href="https://router.feizhu.com/multi/webview?url=https%3A%2F%2Frouter.feizhu.com%2Fws%2F4MKvsf" target="_blank" rel="noopener">居花酒店(苏州吴江上亿汽车城店)</a>
+        <div class="hMeta"><span>经济型</span><span>近苏州市吴江区公安局交通警察大队车辆管理所</span></div>
+        <div class="tag">契合 · 高性价比</div>
+        <div class="hPrice">¥134<small>/晚</small></div>
+      </div>
+    </div></div>
+<div class="budget">约 ¥312 ~ ¥684<small>2 人同行合计 ｜ 人均 ¥156~¥342 ＝ 往返交通 ¥24/人 + 整间房费 ¥264~¥636（真实单晚价 × 2 晚）÷ 2 人同住；不含门票/餐饮/市内交通</small></div></section>
+
+<p class="foot">由 Vibe2Trip 组装 · 审美画像来自百炼 Qwen-VL 推断 · 价格与商品来自飞猪 flyai 真实返回</p>
+</div></body></html>

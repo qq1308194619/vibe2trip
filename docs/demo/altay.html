@@ -1,0 +1,137 @@
+<!doctype html><html lang="zh"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>心动旅行卡 · Vibe2Trip</title>
+<style>
+:root{--bg:#0f1115;--card:#171a21;--ink:#eef1f6;--sub:#9aa3b2;--line:#262b36;--acc:#ff7a59;--acc2:#6ee7c7}
+*{box-sizing:border-box}body{margin:0;background:linear-gradient(180deg,#0f1115,#12151c);color:var(--ink);font:15px/1.7 -apple-system,"PingFang SC","Microsoft YaHei",Segoe UI,sans-serif}
+.wrap{max-width:860px;margin:0 auto;padding:32px 20px 64px}
+.head{display:flex;align-items:center;gap:12px;margin-bottom:6px}.logo{font-size:26px}.title{font-size:24px;font-weight:800;letter-spacing:.5px}
+.sub{color:var(--sub);margin:0 0 22px}.banner{background:#2a2416;border:1px solid #4a3d1c;color:#ffd479;padding:10px 14px;border-radius:10px;margin-bottom:18px;font-size:13px}
+section{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px;margin-bottom:18px}
+h2{font-size:16px;margin:0 0 14px;display:flex;align-items:center;gap:8px}h2 .n{color:var(--acc);font-weight:800}
+.heart{background:linear-gradient(90deg,rgba(255,122,89,.14),transparent);border-left:3px solid var(--acc);padding:10px 14px;border-radius:8px;margin-bottom:14px;color:#ffd9cd}
+.chips{display:flex;flex-wrap:wrap;gap:8px}.chip{background:#1e232c;border:1px solid var(--line);border-radius:20px;padding:5px 12px;font-size:13px;color:var(--sub)}.chip b{color:var(--ink);margin-right:6px;font-weight:600}
+.dests{display:flex;flex-wrap:wrap;gap:10px}.dest{flex:1 1 220px;background:#1b2029;border:1px solid var(--line);border-radius:12px;padding:12px 14px}.dest.pref{border-color:var(--acc);box-shadow:0 0 0 1px rgba(255,122,89,.3) inset}.dname{font-weight:700}.star{color:var(--acc);font-size:12px}.dmatch{color:var(--sub);font-size:13px;margin-top:4px}
+.conline{color:var(--sub);font-size:14px}.assume{color:#ffd479;font-size:12px;margin-top:6px}
+.day{margin-bottom:16px}.dayLabel{font-weight:700;color:var(--acc2);margin-bottom:8px}
+.poi{display:flex;gap:12px;padding:10px 0;border-top:1px solid var(--line)}.poi img{width:74px;height:74px;object-fit:cover;border-radius:10px;flex:0 0 auto}
+.poiBody{flex:1}.poiTop{display:flex;align-items:center;gap:8px}.slot{background:#232a35;color:var(--sub);border-radius:6px;padding:1px 8px;font-size:12px}.poiName{color:var(--ink);font-weight:600;text-decoration:none}.poiName:hover{color:var(--acc)}
+.poiTags{margin:6px 0}.tag{display:inline-block;background:rgba(110,231,199,.12);color:var(--acc2);border-radius:6px;padding:1px 8px;font-size:12px;margin-right:6px}.tag.ghost{background:#232a35;color:var(--sub)}
+.why{color:var(--sub);font-size:13px}
+table{width:100%;border-collapse:collapse;font-size:14px}th,td{text-align:left;padding:8px 6px;border-bottom:1px solid var(--line)}th{color:var(--sub);font-weight:500;font-size:12px}.price{color:var(--acc);font-weight:700}td a{color:var(--acc2);text-decoration:none}
+.hotels{display:flex;flex-direction:column;gap:12px}.hotel{display:flex;gap:12px;background:#1b2029;border:1px solid var(--line);border-radius:12px;padding:10px}.hotel img{width:96px;height:96px;object-fit:cover;border-radius:10px;flex:0 0 auto}
+.hBody{flex:1}.hName{color:var(--ink);font-weight:700;text-decoration:none}.hName:hover{color:var(--acc)}.hMeta{color:var(--sub);font-size:12px;margin:4px 0;display:flex;gap:10px;flex-wrap:wrap}.hPrice{color:var(--acc);font-weight:800;font-size:18px;margin-top:4px}.hPrice small{color:var(--sub);font-weight:400;font-size:12px}
+.budget{margin-top:14px;background:linear-gradient(90deg,rgba(255,122,89,.16),transparent);border:1px solid rgba(255,122,89,.35);border-radius:12px;padding:14px;font-size:24px;font-weight:800;color:#ffb59e}.budget small{display:block;font-size:12px;color:var(--sub);font-weight:400;margin-top:4px}.budget.locked{color:#ffd479;border-color:#4a3d1c;background:linear-gradient(90deg,rgba(255,212,121,.12),transparent);font-size:16px}
+.empty{color:var(--sub);font-size:13px;padding:8px 0}
+.foot{color:var(--sub);font-size:12px;text-align:center;margin-top:20px}
+</style></head><body><div class="wrap">
+<div class="head"><span class="logo">🎨</span><span class="title">心动旅行卡 · Vibe2Trip</span></div>
+<p class="sub">「这张图的感觉，帮我安排」—— 旅行审美解构师</p>
+
+
+
+<section><h2><span class="n">①</span> 心动解读 · 旅行审美画像</h2>
+<div class="heart">💗 在浩瀚雪境中，一盏窗灯是人间温度的具象化承诺</div>
+<div class="chips"><span class="chip"><b>地貌场景</b>高海拔雪岭山脊，积雪覆盖针叶林与木屋错落分布，远山层叠云海缭绕</span><span class="chip"><b>色调光线</b>冷调蓝紫夜空+暖黄窗光对比，雪地漫反射柔光，晨昏微光染山尖淡金</span><span class="chip"><b>氛围情绪</b>孤寂而温暖的静谧感，安全庇护所式的浪漫 solitude</span><span class="chip"><b>活动暗示</b>雪中徒步探屋、观星守夜、围炉小酌</span><span class="chip"><b>节奏快慢</b>极慢，沉浸式停留</span><span class="chip"><b>季节感</b>深冬（积雪厚、树挂雾凇、无落叶）</span><span class="chip"><b>人文/自然</b>自然9:人文1</span></div>
+
+<p class="conline" style="margin-top:6px">灵感来源：用户上传的灵感图（demo_inspiration_snow.png）</p></section>
+
+<section><h2><span class="n">②</span> 命定目的地</h2><div class="dests"><div class="dest pref"><div class="dname">阿勒泰 <span class="star">⭐首选</span></div><div class="dmatch">高海拔雪岭地貌、针叶林雪景、木屋隐现、冬季星空条件极佳</div></div><div class="dest "><div class="dname">长白山</div><div class="dmatch">深冬厚雪、针叶林覆雪、山脊云海、可选林区小木屋住宿</div></div><div class="dest "><div class="dname">海螺沟</div><div class="dmatch">雪山+森林+木屋组合、冬季可观贡嘎雪峰与云海</div></div></div></section>
+
+<section><h2><span class="n">③</span> 出行约束</h2>
+<div class="conline">出发地 上海 ｜ 日期 2026-12-05 ~ 2026-12-07 ｜ 3天 ｜ 同行 2人情侣 ｜ 预算 中等</div>
+</section>
+
+<section><h2><span class="n">④</span> 按天行程</h2><div class="day"><div class="dayLabel">第 1 天</div>
+      <div class="poi">
+        <img src="https://img.alicdn.com/imgextra/i2/6000000000236/O1CN01Zyb8QT1Dc8DBiOIuD_!!6000000000236-2-fliggyimage.png" loading="lazy" onerror="this.style.display='none'">
+        <div class="poiBody">
+          <div class="poiTop"><span class="slot">下午</span><a class="poiName" href="https://router.feizhu.com/multi/webview?url=https%3A%2F%2Frouter.feizhu.com%2Fws%2F3bSbvQ" target="_blank" rel="noopener">禾木村</a></div>
+          <div class="poiTags"><span class="tag">契合 · 孤寂而温暖的静谧感，安全庇护所式的浪漫 solitude</span><span class="tag ghost">约半天</span></div>
+          <div class="why">作为图瓦人聚居的原始雪村，木屋暖黄窗光与冷调雪岭形成完美视觉闭环，契合用户‘一盏窗灯是人间温度的具象化承诺’的核心心象；下午抵达可避开清晨薄雾，直触漫反射柔光中的积雪木屋群</div>
+        </div>
+      </div>
+      <div class="poi">
+        <img src="https://img.alicdn.com/tfscom/TB1SK7ThnTI8KJjSsphSuwFppXa" loading="lazy" onerror="this.style.display='none'">
+        <div class="poiBody">
+          <div class="poiTop"><span class="slot">晚上</span><a class="poiName" href="https://router.feizhu.com/multi/webview?url=https%3A%2F%2Frouter.feizhu.com%2Fws%2F3RTx48" target="_blank" rel="noopener">禾木观景台</a></div>
+          <div class="poiTags"><span class="tag">契合 · 观星守夜</span><span class="tag ghost">约2h</span></div>
+          <div class="why">高海拔无光污染山脊，正对云海与层叠远山，是深冬雪夜观星与守夜的理想锚点，呼应‘冷调蓝紫夜空+暖黄窗光对比’的palette与极慢pace</div>
+        </div>
+      </div></div><div class="day"><div class="dayLabel">第 2 天</div>
+      <div class="poi">
+        <img src="https://img.alicdn.com/imgextra/i1/O1CN01aEMvbv1ysQ3WdE91z_!!0-alitrip.jpg" loading="lazy" onerror="this.style.display='none'">
+        <div class="poiBody">
+          <div class="poiTop"><span class="slot">上午</span><a class="poiName" href="https://router.feizhu.com/multi/webview?url=https%3A%2F%2Frouter.feizhu.com%2Fws%2F1wlhwK" target="_blank" rel="noopener">禾木风景区</a></div>
+          <div class="poiTags"><span class="tag">契合 · 雪中徒步探屋</span><span class="tag ghost">约半天</span></div>
+          <div class="why">与禾木村地理一体、步道连通，上午雪质紧实适宜徒步穿行针叶林与木屋间，沉浸式体验‘高海拔雪岭山脊，积雪覆盖针叶林与木屋错落分布’的morphology</div>
+        </div>
+      </div>
+      <div class="poi">
+        <img src="https://img.alicdn.com/tfscom/TB1izp6ignH8KJjSspcSuv3QFXa" loading="lazy" onerror="this.style.display='none'">
+        <div class="poiBody">
+          <div class="poiTop"><span class="slot">下午</span><a class="poiName" href="https://router.feizhu.com/multi/webview?url=https%3A%2F%2Frouter.feizhu.com%2Fws%2F1uOEWG" target="_blank" rel="noopener">喀纳斯景区-月亮湾</a></div>
+          <div class="poiTags"><span class="tag">契合 · 晨昏微光染山尖淡金</span><span class="tag ghost">约2h</span></div>
+          <div class="why">午后斜射光最易勾勒山脊金边，月亮湾曲流静水倒映雪岭，强化‘柔光+淡金染山尖’氛围；且位于喀纳斯主线上，顺禾木下行动线自然衔接</div>
+        </div>
+      </div></div><div class="day"><div class="dayLabel">第 3 天</div>
+      <div class="poi">
+        <img src="https://img.alicdn.com/imgextra/i4/O1CN011ZcVpFo5DkpfGmE_!!0-alitrip.jpg" loading="lazy" onerror="this.style.display='none'">
+        <div class="poiBody">
+          <div class="poiTop"><span class="slot">上午</span><a class="poiName" href="https://router.feizhu.com/multi/webview?url=https%3A%2F%2Frouter.feizhu.com%2Fws%2F2t0Vje" target="_blank" rel="noopener">喀纳斯景区</a></div>
+          <div class="poiTags"><span class="tag">契合 · 自然9:人文1</span><span class="tag ghost">约半天</span></div>
+          <div class="why">作为区域核心山湖综合体，涵盖冰川地貌与原始森林，满足‘浩瀚雪境’尺度感；上午光线稳定，利于沉浸式慢行于厚雪覆盖的针叶林带，呼应极慢pace与自然主导性</div>
+        </div>
+      </div>
+      <div class="poi">
+        <img src="https://img.alicdn.com/tfscom/TB1hwIeXRnTBKNjSZPfSuvf1XXa" loading="lazy" onerror="this.style.display='none'">
+        <div class="poiBody">
+          <div class="poiTop"><span class="slot">下午</span><a class="poiName" href="https://router.feizhu.com/multi/webview?url=https%3A%2F%2Frouter.feizhu.com%2Fws%2F26huMT" target="_blank" rel="noopener">白哈巴景区</a></div>
+          <div class="poiTags"><span class="tag">契合 · 孤寂而温暖的静谧感，安全庇护所式的浪漫 solitude</span><span class="tag ghost">约2h</span></div>
+          <div class="why">最北端边境图瓦古村，原始风貌保存最完整，木屋稀疏散落于雪岭褶皱中，比禾木更显‘孤寂’却仍具窗灯温度，构成三天静谧感递进收束；地理上紧邻喀纳斯北线，动线零绕行</div>
+        </div>
+      </div>
+      <div class="poi">
+        <img src="https://img.alicdn.com/imgextra/i2/6000000000377/O1CN01JqV1tz1EeiCB0Xwyz_!!6000000000377-0-fliggyimage.jpg" loading="lazy" onerror="this.style.display='none'">
+        <div class="poiBody">
+          <div class="poiTop"><span class="slot">晚上</span><a class="poiName" href="https://router.feizhu.com/multi/webview?url=https%3A%2F%2Frouter.feizhu.com%2Fws%2F0Lf1Wh" target="_blank" rel="noopener">新疆·喀纳斯国家地质公园</a></div>
+          <div class="poiTags"><span class="tag">契合 · 围炉小酌</span><span class="tag ghost">约2h</span></div>
+          <div class="why">地质公园内设图瓦文化展示中心及暖屋休憩点，可在结束一日雪岭漫游后围炉复盘冰川遗迹与雪境尺度，将‘自然浩瀚’落回‘人间温度’，完成vibe闭环</div>
+        </div>
+      </div></div></section>
+
+<section><h2><span class="n">⑤</span> 可预订清单</h2>
+<h2 style="font-size:14px;color:var(--sub)">交通</h2>
+<table><thead><tr><th>航段</th><th>车次/航班</th><th>时间</th><th>价格</th><th></th></tr></thead><tbody><tr><td>去程</td><td>Z304 / K9751</td><td>17:46 → 15:25</td><td class="price">¥467</td><td><a href="https://router.feizhu.com/multi/webview?url=https%3A%2F%2Frouter.feizhu.com%2Fws%2F1tbXSH" target="_blank" rel="noopener">预订</a></td></tr><tr><td>返程</td><td>K9752 / Z306</td><td>16:05 → 12:54</td><td class="price">¥467</td><td><a href="https://router.feizhu.com/multi/webview?url=https%3A%2F%2Frouter.feizhu.com%2Fws%2F0Imc0B" target="_blank" rel="noopener">预订</a></td></tr></tbody></table>
+<h2 style="font-size:14px;color:var(--sub);margin-top:18px">住宿</h2>
+<div class="hotels">
+    <div class="hotel">
+      <img src="https://img.alicdn.com/imgextra/i2/O1CN01szyFI7D8hbB37MB6_!!4611686018427384182-0-fliggy_content_upload_image.jpg" loading="lazy" onerror="this.style.display='none'">
+      <div class="hBody">
+        <a class="hName" href="https://router.feizhu.com/multi/webview?url=https%3A%2F%2Frouter.feizhu.com%2Fws%2F1lBhvq" target="_blank" rel="noopener">喀纳斯禾木假日度假酒店</a>
+        <div class="hMeta"><span>豪华型</span></div>
+        <div class="tag">契合 · 品质度假</div>
+        <div class="hPrice">¥2897<small>/晚</small></div>
+      </div>
+    </div>
+    <div class="hotel">
+      <img src="https://img.alicdn.com/imgextra/i1/6000000001576/O1CN01FJzlPH1NVrJp3IKoi_!!6000000001576-0-hotel.jpg" loading="lazy" onerror="this.style.display='none'">
+      <div class="hBody">
+        <a class="hName" href="https://router.feizhu.com/multi/webview?url=https%3A%2F%2Frouter.feizhu.com%2Fws%2F1ge6t2" target="_blank" rel="noopener">全季布尔津禾木游客服务中心酒店</a>
+        <div class="hMeta"><span>高档型</span></div>
+        <div class="tag">契合 · 品质度假</div>
+        <div class="hPrice">¥979<small>/晚</small></div>
+      </div>
+    </div>
+    <div class="hotel">
+      <img src="https://img.alicdn.com/imgextra/i4/6000000004971/O1CN011egkJa1malWdA77vi_!!6000000004971-0-hotel.jpg" loading="lazy" onerror="this.style.display='none'">
+      <div class="hBody">
+        <a class="hName" href="https://router.feizhu.com/multi/webview?url=https%3A%2F%2Frouter.feizhu.com%2Fws%2F2bfiN0" target="_blank" rel="noopener">禾木無也民宿</a>
+        <div class="hMeta"><span>舒适型</span><span>近禾木景区</span></div>
+        <div class="tag">契合 · 舒适通勤</div>
+        <div class="hPrice">¥1444<small>/晚</small></div>
+      </div>
+    </div></div>
+<div class="budget">约 ¥3826 ~ ¥7662<small>2 人同行合计 ｜ 人均 ¥1913~¥3831 ＝ 往返交通 ¥934/人 + 整间房费 ¥1958~¥5794（真实单晚价 × 2 晚）÷ 2 人同住；不含门票/餐饮/市内交通</small></div></section>
+
+<p class="foot">由 Vibe2Trip 组装 · 审美画像来自百炼 Qwen-VL 推断 · 价格与商品来自飞猪 flyai 真实返回</p>
+</div></body></html>

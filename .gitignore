@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# 密钥与环境变量（切勿提交真实 Key）
+.env
+*.key
+FLYAI_API_KEY*
+secrets.*
+
+# 系统
+.DS_Store
+Thumbs.db
+
+# 本地临时产物
+*.local.json
+tmp/
+_probe/
+
+# flyai 官方 bundle（由 scripts/setup_flyai.mjs 下载，勿提交第三方代码）
+vendor/flyai/
+
+# 生成的旅行卡产物
+outputs/

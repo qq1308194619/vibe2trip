@@ -1,0 +1,13 @@
+{
+  "vibe_profile": {
+    "morphology": "湖景 + 古镇水乡", "palette": "暖调治愈 · 黄昏暖光", "mood": "松弛 / 治愈",
+    "activity": ["Citywalk", "摄影打卡", "美食探店"], "pace": "慢生活度假", "season": "四季皆宜",
+    "culture_nature": "人文 6 : 自然 4", "heart_reason": "一种想慢下来、被水汽和暖光包裹、随手一拍都是壁纸的感觉",
+    "recognized_place": "杭州"
+  },
+  "destinations": [
+    {"name": "杭州", "match": "湖景+暖调+慢生活+人文，命中 4 个维度", "preferred": true},
+    {"name": "苏州", "match": "水乡古镇+低饱和高级灰，命中 3 个维度", "preferred": false}
+  ],
+  "poi_query": {"category": "山湖田园", "keyword": "西湖"}
+}
